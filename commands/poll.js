@@ -13,5 +13,5 @@ module.exports = (bot, message, args, Discord) => {
             message.react('👍')
                 .then(() => message.react('🤷'))
                 .then(() => message.react('👎'))
-        }).catch(() => console.error(`Emoji failed to react because of ${error}`));
+        }).catch(() => bot.log(`Emoji failed to react because of ${error}`, 'Error'));
 };
