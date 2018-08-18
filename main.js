@@ -10,6 +10,8 @@ bot.log = require('./functions/log.js');
 bot.on('ready', () => require('./events/ready.js')(bot));
 //Message Event Handler
 bot.on('message', message => require('./events/message.js')(bot, message, Discord));
+//Error Logging
+bot.on("error", error => require('./events/error.js')(bot, error));
 
 //Commands
 bot.commands = new Discord.Collection();

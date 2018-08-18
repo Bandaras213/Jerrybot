@@ -13,6 +13,9 @@ module.exports = (bot, message, args, Discord) => {
         "./memes/catpics/cp (11).jpg",
         "./memes/catpics/cp (12).jpg",
         "./memes/catpics/cp (13).jpg",
+        "./memes/catpics/cp (14).jpg",
+        "./memes/catpics/cp (15).jpg",
+
     ];
     var rand = Math.floor(Math.random() * images.length);
     var randomImage = images[rand];

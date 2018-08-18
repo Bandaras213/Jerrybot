@@ -1,4 +1,3 @@
-module.exports = (bot, message, args, Discord) => {
-    message.delete();
-    message.channel.send('Hello, World!');
+module.exports = (bot, message, args, Discord, moment) => {
+    message.channel.send(`Hello, World!`);
 };
